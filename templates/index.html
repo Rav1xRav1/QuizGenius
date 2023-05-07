@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questions</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questions</h1>
+        {% for i in range(questions|length) %}
+            <div class="question">
+                <p>{{ questions[i] }}</p>
+                <p class="answer">{{ answers[i] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
